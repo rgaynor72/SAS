@@ -1,0 +1,128 @@
+html {
+  font-size: 18px;
+  font-family: helvetica;
+  color: white;
+}
+
+header, .jumbotron, .navigation, .maincontent, .productimg, footer {
+  width: 100%;
+  justify-content: center;
+}
+
+header, .jumbotrontxt, .producttxt, .logistic h3, footer {
+  background-color: black;
+}
+
+header, .headerlogo, .jumbotron, .navigation, nav ul, .maincontent, .products, .product, .productimg, .logistics, footer {
+  display: flex;
+}
+
+.site {
+  width: 53.33rem;
+}
+
+.headerlogo {
+  padding: 0.66rem 0;
+  font-size: 1rem;
+}
+
+.headerlogo img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.headerlogo, .productimg {
+  align-items: center;
+}
+
+.headerlogo, .jumbotrontxt {
+  text-transform: uppercase;
+}
+
+.jumbotron {
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron, footer {
+  align-items: center;
+}
+
+.jumbotrontxt {
+  width: 20rem;
+  margin-top: 9rem;
+  padding: 2rem 3rem;
+  font-weight:bold;
+}
+
+.jumbotrontxt h2 {
+  font-size: 1rem;
+  padding-bottom: 0.25rem
+}
+
+.jumbotrontxt h1 {
+  font-size: 2rem;
+}
+
+.navigation {
+  background-color: firebrick;
+}
+
+nav ul, .products, .logistics {
+  justify-content: space-between;
+}
+
+nav ul{
+padding: 0.75rem 0;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product {
+  width: 30%;
+  flex-direction: column;
+  text-align: center;
+  margin: 3rem 0;
+  border: 4px solid black;
+}
+.productimg {
+  height: 9rem;
+  padding: 2rem 0;
+}
+
+.productimg img {
+  max-width: 70%;
+  max-height: 100%;
+}
+
+.producttxt {
+  padding: 0.5rem 0;
+}
+
+.logistic {
+  width: 35%;
+  margin-bottom: 4rem;
+}
+
+.logistic h3 {
+  padding: 1rem 2rem;
+  background-color: black;
+}
+
+.logistic h4 {
+  color: black;
+}
+
+.copyright {
+  text-align: left;
+}
+
+footer {
+  height: 5rem;
+}
