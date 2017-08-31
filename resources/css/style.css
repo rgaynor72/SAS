@@ -75,7 +75,7 @@ nav ul, .products, .logistics {
   justify-content: space-between;
 }
 
-nav ul{
+nav ul, .smallsize {
 padding: 0.75rem 0;
 }
 
@@ -91,6 +91,11 @@ nav a {
   margin: 3rem 0;
   border: 4px solid black;
 }
+
+.products {
+  flex-wrap: wrap;
+}
+
 .productimg {
   height: 9rem;
   padding: 2rem 0;
@@ -125,4 +130,79 @@ nav a {
 
 footer {
   height: 5rem;
+}
+
+.smallsize {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+
+  #glasses, .fullsize {
+    display: none;
+  }
+
+  .smallsize {
+    display: inline;
+    text-align: center;
+  }
+
+  .jumbotrontxt h2 {
+    font-size: .89rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .headerlogo h1 {
+    display: none;
+  }
+
+  .headerlogo {
+    justify-content: center;
+  }
+
+  .jumbotron {
+    height: 15rem;
+  }
+
+  .jumbotrontxt {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  .jumbotrontxt h2 {
+    font-size: 0.77rem;
+  }
+
+  .jumbotrontxt h1 {
+    font-size: 1rem;
+  }
+
+  #glasses, #watch {
+    display: none;
+  }
+
+  .product, .logistic {
+    width: 90%;
+  }
+
+  .products, .logistics {
+    justify-content: center;
+  }
+
+  .logistics {
+    flex-wrap: wrap;
+    margin-bottom: 3.5rem;
+  }
+
+  .logistic {
+    margin-bottom: 0.5rem;
+  }
+
+  .copyright {
+    text-align: center;
+  }
 }
